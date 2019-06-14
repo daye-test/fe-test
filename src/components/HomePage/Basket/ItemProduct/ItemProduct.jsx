@@ -71,8 +71,8 @@ class ItemProduct extends React.Component {
 }
 
 ItemProduct.propTypes = {
-	addProduct: PropTypes.func.isRequired,
-	removeProduct: PropTypes.func.isRequired,
+	addProduct: PropTypes.func,
+	removeProduct: PropTypes.func,
 	allProducts: PropTypes.arrayOf(PropTypes.any),
 };
 

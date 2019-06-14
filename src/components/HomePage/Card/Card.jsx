@@ -49,7 +49,7 @@ class Card extends React.Component {
 }
 
 Card.propTypes = {
-	addProduct: PropTypes.func.isRequired,
+	addProduct: PropTypes.func,
 	finalProduct: PropTypes.arrayOf(PropTypes.any),
 };
 

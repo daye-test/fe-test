@@ -50,7 +50,7 @@ class Header extends React.Component {
 
 Header.propTypes = {
 	cartLength: PropTypes.number,
-	navigation: PropTypes.func.isRequired,
+	navigation: PropTypes.func,
 	allProducts: PropTypes.arrayOf(PropTypes.any),
 };
 

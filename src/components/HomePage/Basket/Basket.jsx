@@ -75,9 +75,9 @@ class Basket extends React.Component {
 }
 
 Basket.propTypes = {
-	addProduct: PropTypes.func.isRequired,
-	removeProduct: PropTypes.func.isRequired,
-	removeAll: PropTypes.func.isRequired,
+	addProduct: PropTypes.func,
+	removeProduct: PropTypes.func,
+	removeAll: PropTypes.func,
 	allProducts: PropTypes.arrayOf(PropTypes.any),
 };
 
