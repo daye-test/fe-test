@@ -1,0 +1,47 @@
+$color_lightwhite: #f2f2f2;
+$color_blackpure: black;
+$font_family_sans: sans-serif;
+$background_color_grey333: #333;
+$background_color_greylighter: #ddd;
+
+.topnav {
+	background-color: $background_color_grey333;
+	overflow: hidden;
+	position: sticky;
+	top: 0;
+	a {
+		float: right;
+		display: block;
+		color: $color_lightwhite;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+		font-family: $font_family_sans;
+		&:hover {
+			background-color: $background_color_greylighter;
+			color: $color_blackpure;
+			&:nth-child(2) {
+				background-color: $background_color_greylighter;
+			}
+			&:nth-child(3) {
+				background-color: $background_color_greylighter;
+			}
+		}
+	}
+}
+.basketActive{
+	background-color: $background_color_greylighter;
+	color: $color_blackpure !important;
+}
+.cursorPointer{
+    cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+	.topnav {
+		a {
+			display: block;
+			width: 100%;
+		}
+	}
+}

@@ -1,0 +1,14 @@
+version: '3'
+services:
+    express:
+        build: 
+            context: . 
+            dockerfile: Dockerfile
+        image: daye_test_image:local
+        container_name: daye_fe_test_container01
+        restart: always
+        ports:
+            - "8080:8080"
+        volumes:
+            - ./:/daye_fe_test
+            - /daye_fe_test/node_modules

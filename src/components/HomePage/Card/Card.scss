@@ -1,0 +1,52 @@
+$background_button: #f9f9f9;
+$span_black: #000;
+
+.cproduct {
+	display: grid;
+	grid-template-rows: 1fr minmax(100px, auto);
+	width: 77%;
+	background-color: white;
+	padding: 5%;
+	border-radius: 15px;
+	img {
+		width: 100%;
+	}
+	footer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 5px;
+		.cprice {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin: 5px;
+			span {
+				font-size: 1.3rem;
+				font-weight: 600;
+				color: $span_black;
+				margin-bottom: 10px;
+			}
+		}
+		h3 {
+			font-size: 1rem;
+			font-weight: 300;
+			margin: 10px;
+			text-align: center;
+		}
+		button {
+			background-color: $background_button;
+			border: none;
+			padding: 10px;
+			outline: none;
+			transition: all 0.1s linear;
+			cursor: pointer;
+			box-shadow: inset 0px 0px 0px 1px #ccc;
+			&:active {
+				opacity: 0.4;
+			}
+		}
+	}
+}
