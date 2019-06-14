@@ -204,7 +204,7 @@ class HomePage extends React.Component {
 	}
 
 	render() {
-		const [products] = this.state.retrievedObjet;
+		const products = this.state.productArray;
 		if (this.state.dynamicTab === 'home') {
 			return (
 				<section>
@@ -215,7 +215,7 @@ class HomePage extends React.Component {
 					/>
 					<div className={`${s.productcontainer} ${s.bggrey}`}>
 						<section className={s.spanPosition}>
-							<span>{products && products.length > 0 ? products.length : '0'} products found</span>
+							<span>{products && products.length > 0 ? products.length : 0} products found</span>
 						</section>
 						<div className="form-group">
 							<div className="col-12 w-100 pb-3">
