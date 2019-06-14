@@ -8,7 +8,7 @@ Running local:
 
 `yarn install`: Installs all the dependencies
 `yarn dev`: Runs in development mode
-`yarn test`: Runs all the unit tests (Not implemented yet)
+`yarn test`: Runs all the unit tests
 `yarn lint`: Runs the code linter
 `yarn build`: Builds all the static assets for the project within the /dist folder
 
