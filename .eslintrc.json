@@ -25,6 +25,7 @@
       "react/button-has-type": 0,
       "no-script-url": 0,
       "radix": 0,
+      "react/require-default-props": 0,
       "no-trailing-spaces": 0,
       "implicit-arrow-linebreak": 0,
       "no-restricted-globals": 0,
